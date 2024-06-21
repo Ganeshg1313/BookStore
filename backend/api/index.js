@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 // Option 2 : Allow all custom origins
 app.use(cors({
-    origin: 'https://book-store-api-phi.vercel.app',
+    origin: 'https://book-store-five-beige.vercel.app',
     methos:['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
 }))
