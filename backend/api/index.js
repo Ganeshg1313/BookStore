@@ -13,14 +13,14 @@ app.use(bodyParser.json());
 
 //Middleware for handling CORS Policy
 // Option 1 : Allow all origins with default of cors(*)
-app.use(cors())
+// app.use(cors())
 
 // Option 2 : Allow all custom origins
-// app.use(cors({
-//     origin: 'https://localhost:3000',
-//     methos:['GET', 'POST', 'PUT', 'DELETE'],
-//     allowedHeaders: ['Content-Type'],
-// }))
+app.use(cors({
+    origin: 'https://book-store-api-phi.vercel.app',
+    methos:['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type'],
+}))
 
 app.get('/', (req,res) => {
     return res.status(234).send('Welcome')
