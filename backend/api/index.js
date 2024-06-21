@@ -1,9 +1,9 @@
 import express, { response } from "express";
 import bodyParser from "body-parser";
-import { PORT, mongoDBURL } from "./config.js";
+import { PORT, mongoDBURL } from "../config.js";
 import mongoose from "mongoose";
-import { Book } from "./models/bookModel.js";
-import booksRoute from './routes/booksRoute.js'
+import { Book } from "../models/bookModel.js";
+import booksRoute from '../routes/booksRoute.js'
 import cors from 'cors'
 
 const app = express()
